@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <!--CSS Link-->
+  <!--CSS Stylesheet-->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -55,23 +55,17 @@
   <div class="container">
     <div class="row">
      
-      <!-- Left box -->
+      <!-- Current Plot (Left Box) -->
       <div class="col-lg-7 col-md-12">
-        <div class="box">
+        <div class="box" style="padding-bottom: 120px;">
           <h3 class="title">Summary: Latitude vs. X</h3>
           <hr>
-          <img src="Fig1_MaxTemp.png" class="vizualization rounded float-left" alt="MaxTemp">
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-            accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-            500 cities.</p>
-          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-            source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-            any trends and correlations witnessed.</p>
+          <img src="Fig3_Cloudiness.png" alt="Cloudiness Graph">
+          <p>Cloud coverage varies significantly across latitudes. The data does not reveal any clear trend.</p>          
         </div>
       </div>
 
-      <!-- Right Box  with 2x2 Panel -->
+      <!-- Comparison Panel (Right Box) -->
       <div class="col-lg-5 col-md-12">
         <div class="box">
           <h5 class="title">Visualizations</h5>
@@ -84,15 +78,21 @@
                 </a>
               </div>
               <div class="col-6">
-                <a href="humidity.html"><img class="panel" src="Fig2_Humidity.png" alt="Humidity Graph"></a>
+                <a href="humidity.html">
+                  <img class="panel" src="Fig2_Humidity.png" alt="Humidity Graph">
+                </a>
               </div>
             </div>
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-6">
-                <a href="cloudiness.html"><img class="panel" src="Fig3_Cloudiness.png" alt="Cloudiness Graph"></a>
+                <a href="cloudiness.html">
+                  <img class="panel" src="Fig3_Cloudiness.png" alt="Cloudiness Graph">
+                </a>
               </div>
               <div class="col-6">
-                <a href="windspeed.html"><img class="panel" src="Fig4_WindSpeed.png" alt="WindSpeed Graph"></a>
+                <a href="windspeed.html">
+                  <img class="panel" src="Fig4_WindSpeed.png" alt="Wind Speed Graph">
+                </a>
               </div>
             </div>
           </div>
